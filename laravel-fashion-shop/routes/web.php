@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -13,14 +14,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-})->name('pagina_home');
+Route::get('/', 'HomeController@index')->name('pagina_home');
 
-Route::get('/prodotti', function () {
-    return view('products');
-})->name('pagina_prodotti');
+Route::get('/prodotti','HomeController@index')->name('pagina_prodotti');
 
 Route::get('/storia', function () {
-    return view('story');
+    return view('storia');
 })->name('pagina_storia');
