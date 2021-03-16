@@ -1,5 +1,5 @@
 @extends('Layouts.app')
 
 @section('content')
-    <h1>io sono storia</h1>
+    <h1>{{ $saluto }}</h1>
 @endsection

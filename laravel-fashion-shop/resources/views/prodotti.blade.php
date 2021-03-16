@@ -1,5 +1,7 @@
 @extends('Layouts.app')
 
 @section('content')
-    <h1>io sono prodotti</h1>
+    @foreach ($dresses as $item)
+        <p>{{ $item->type }}</p>
+    @endforeach
 @endsection
